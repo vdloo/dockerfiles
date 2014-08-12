@@ -1,6 +1,7 @@
 # Run Dwarf Fortress in a docker container and connect with VNC
 # 
 # Example
+# Build: docker build -t df .
 # Start with: docker run -p 5900:5900 -v /saves:/df_linux/data/saves -i -t df /bin/bash
 # Then on desktop connect vnc with: vncviewer 192.168.x.x
 #
