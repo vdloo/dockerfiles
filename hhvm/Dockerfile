@@ -76,10 +76,7 @@ RUN apt-get update && \
 	wget \
 	zlib1g-dev
 
-#RUN git clone git://github.com/facebook/hhvm.git /home/hhvm --depth=1; ls; cd /home/hhvm; ls
 RUN git clone git://github.com/facebook/hhvm.git /home/hhvm 
-
-#RUN ls; cd /home/hhvm; ls
 
 RUN cd /home/hhvm ; \
 	export CMAKE_PREFIX_PATH=`pwd` ; \
