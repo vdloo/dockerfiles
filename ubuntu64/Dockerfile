@@ -8,7 +8,8 @@ RUN /usr/sbin/enable_insecure_key
 RUN apt-get update && apt-get install -y \
     rsync \
     puppet \
-    htop
+    htop \
+    git
 RUN puppet module install puppetlabs-vcsrepo
 RUN puppet module install maestrodev-wget
 RUN puppet module install saz-sudo
